@@ -18,7 +18,7 @@ export class SearchPipe implements PipeTransform {
     // console.log('filter', filter);
     for (const field in filter){
       if (this.validInput(filter[field]) && this.validInput(element[field])) {
-        console.log('valid field', field);
+        // console.log('valid field', field);
         if (
           !element[field]
           .toString()
