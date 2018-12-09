@@ -1,3 +1,6 @@
+# AWS Deployment Server Public IP Address:
+[34.213.223.60](34.213.223.60)
+
 # Public
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
