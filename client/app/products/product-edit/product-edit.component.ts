@@ -17,6 +17,7 @@ export class ProductEditComponent implements OnInit {
   product: Product;
   products: Product[] = [];
   selectedProduct: Product;
+  errors: string[] = [];
 
   @Output()
   updateProduct = new EventEmitter<Product>();
@@ -33,8 +34,13 @@ export class ProductEditComponent implements OnInit {
   }
 
   onEvent(event: Event): void {
-    console.log('eventing');
     event.stopPropagation();
+  }
+
+  onReset(event: Event, form: NgForm) {
+    event.preventDefault();
+    this.errors = [];
+    form.reset();
   }
 
   getProduct(): void {

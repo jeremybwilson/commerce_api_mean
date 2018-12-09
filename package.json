@@ -39,6 +39,7 @@
     "mongoose-unique-validator": "^2.0.2",
     "morgan": "^1.9.1",
     "ngx-cookie": "^4.1.2",
+    "node-mongoose-validator": "^1.2.0",
     "rxjs": "^6.3.3",
     "validator": "^10.9.0",
     "zone.js": "~0.8.26"

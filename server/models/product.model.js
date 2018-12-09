@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const numValidator = require('node-mongoose-validator');
+const validator = require('validator');
 
 const { Schema } = mongoose;
 
@@ -24,5 +26,8 @@ const ProductSchema = new Schema({
       trim: true
     }
 }, {timestamps: true})
+
+ProductSchema.path('quantity').validate(numValidator.$isNumeric({ message : 'Quantity must be an integer.' }));
+ProductSchema.path('price').validate(numValidator.$isFloat({ message : 'Price must be a number or decimal value.' }));
 
 module.exports = mongoose.model('Product', ProductSchema);
