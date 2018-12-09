@@ -23,7 +23,7 @@ const routes: Routes = [
       {
         path: 'new',
         component: fromProducts.ProductNewComponent,
-        canActivate: [AuthGuard]
+        // canActivate: [AuthGuard]
       },
       {
         path: ':id',
