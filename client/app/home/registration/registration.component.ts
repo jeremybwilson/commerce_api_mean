@@ -27,12 +27,10 @@ export class RegistrationComponent implements OnInit {
     .subscribe(
       createdUser => {
         // console.log('created', createdUser);
-
         this.router.navigateByUrl('products');
       },
       error => {
         console.log('error', error);
-
         this.registrationErrors = error.error;
       }
     );
