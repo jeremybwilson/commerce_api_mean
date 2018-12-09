@@ -25,8 +25,6 @@ export class LoginComponent implements OnInit {
   onSubmit(user: User) {
     this.auth.login(user)
       .subscribe(loggedUser => {
-        // console.log(loggedUser);
-
         this.router.navigateByUrl('products');
       }, error => {
         console.log(`an error occurred`, error);

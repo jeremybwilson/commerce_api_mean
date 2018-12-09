@@ -28,7 +28,7 @@ export class RegistrationComponent implements OnInit {
       createdUser => {
         // console.log('created', createdUser);
 
-        this.router.navigateByUrl('books');
+        this.router.navigateByUrl('products');
       },
       error => {
         console.log('error', error);
